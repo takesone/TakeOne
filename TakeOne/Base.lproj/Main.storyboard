@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,21 +21,46 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e51-zd-Glx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0I-BM-wqE">
-                                <rect key="frame" x="200" y="120" width="200" height="67"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0I-BM-wqE">
+                                <rect key="frame" x="200" y="120" width="200" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Kq9-to-kN5" userLabel="width = 200"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L5-4c-cMP">
+                                <rect key="frame" x="50" y="220" width="500" height="50"/>
+                                <color key="backgroundColor" red="0.22973570620964978" green="0.52843070816713145" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yBt-9h-wpA"/>
+                                </constraints>
+                                <state key="normal" title="Log in with facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peu-NI-KPb">
+                                <rect key="frame" x="50" y="290" width="500" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="52V-bu-Bi0"/>
+                                </constraints>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e51-zd-Glx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0zF-ea-hzW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="peu-NI-KPb" secondAttribute="trailing" constant="30" id="5nu-WV-kF6"/>
+                            <constraint firstItem="peu-NI-KPb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="8Qq-d6-Bfz"/>
+                            <constraint firstItem="1L5-4c-cMP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="ERN-6I-OAj"/>
+                            <constraint firstItem="1L5-4c-cMP" firstAttribute="top" secondItem="k0I-BM-wqE" secondAttribute="bottom" constant="100" id="HaV-md-iao"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e51-zd-Glx" secondAttribute="bottom" id="LzM-fz-a72"/>
+                            <constraint firstItem="peu-NI-KPb" firstAttribute="top" secondItem="1L5-4c-cMP" secondAttribute="bottom" constant="20" id="Oh0-Nd-23j"/>
                             <constraint firstItem="k0I-BM-wqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uqh-N9-ei1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k0I-BM-wqE" secondAttribute="bottom" constant="430" id="Zqu-I3-qRX"/>
                             <constraint firstItem="k0I-BM-wqE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bve-Ig-MLh"/>
                             <constraint firstItem="k0I-BM-wqE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="eQg-xh-sIo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1L5-4c-cMP" secondAttribute="trailing" constant="30" id="lVv-TT-KtN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k0I-BM-wqE" secondAttribute="bottom" constant="430" id="sSm-u6-iHs"/>
                             <constraint firstAttribute="trailing" secondItem="e51-zd-Glx" secondAttribute="trailing" id="tPT-4f-d4K"/>
                             <constraint firstItem="e51-zd-Glx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vEH-1j-2aO"/>
@@ -49,7 +75,9 @@
                     </view>
                     <connections>
                         <outlet property="loginImageView" destination="e51-zd-Glx" id="1Tm-hA-fnE"/>
+                        <outlet property="loginSignupButton" destination="peu-NI-KPb" id="jCc-Tf-BQA"/>
                         <outlet property="loginTitleImageView" destination="k0I-BM-wqE" id="FF4-QW-HTT"/>
+                        <outlet property="loginWithFacebookButton" destination="1L5-4c-cMP" id="vy0-W0-e4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

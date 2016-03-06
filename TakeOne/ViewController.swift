@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     //ログイン時のイメージ
     @IBOutlet weak var loginImageView: UIImageView!
     @IBOutlet weak var loginTitleImageView: UIImageView!
+    @IBOutlet weak var loginWithFacebookButton: UIButton!
+    @IBOutlet weak var loginSignupButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +24,12 @@ class ViewController: UIViewController {
         //ログイン画面のロゴ画像
         let loginTitleImage = UIImage(named: "logo.png")
         loginTitleImageView.image = loginTitleImage
-        
-        //let titleOriSize = loginTitleImageView.frame
-        let titleNewSize:CGRect = CGRectMake(0, 0, 100, 100)
-        loginTitleImageView!.frame = titleNewSize
-        //var titleImageSize = self.loginTitleImageView.image!.size
-        //titleImageSize.height /= 2
-        //titleImageSize.width /= 2
-        //loginTitleImageView.image?.size.height = 10
-        
+        //ログインボタンの見た目を角丸にする
+        loginWithFacebookButton.layer.cornerRadius = 10
+        //サインアップのボタン
+        loginSignupButton.layer.borderWidth = 2
+        loginSignupButton.layer.borderColor = UIColor.whiteColor().CGColor
+        loginSignupButton.layer.cornerRadius = 10
     }
 
     override func didReceiveMemoryWarning() {
