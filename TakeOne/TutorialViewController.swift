@@ -45,9 +45,46 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate{
         self.pageControll.userInteractionEnabled = false
         self.view.addSubview(self.pageControll)
         
+        //ボタンの追加
+        let nextButton = UIButton(frame: CGRectMake(screenW/3, screenH-50, screenW/3*2, 50))
+        nextButton.backgroundColor = UIColor.orangeColor()
+        nextButton.addTarget(self, action: "onNext", forControlEvents: .TouchUpInside)
+        nextButton.setTitle("Next", forState: UIControlState.Normal)
+        nextButton.layer.masksToBounds = true
+        self.view.addSubview(nextButton)
+        //backボタンの追加
+        let backButton = UIButton(frame: CGRectMake(0, screenH-50, screenW/3, 50))
+        backButton.backgroundColor = UIColor.grayColor()
+        backButton.addTarget(self, action: "onBack", forControlEvents: .TouchUpInside)
+        backButton.setTitle("Back", forState: UIControlState.Normal)
+        backButton.layer.masksToBounds = true
+        self.view.addSubview(backButton)
+        
         //一度チュートリアルを見たということを保存
         NSUserDefaults.standardUserDefaults().setBool(false, forKey: LOGIN_FIRST_TIME)
         NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
+    func onNext(){
+        if(pageControll.currentPage < self.imeges.count-1){
+            print ("click next button");
+            var frame: CGRect = self.scrollView.bounds
+            frame.origin.x = frame.size.width * CGFloat(pageControll.currentPage+1)
+            pageControll.currentPage += 1
+            frame.origin.y = 0
+            self.scrollView.scrollRectToVisible(frame, animated: true)
+        }
+    }
+    
+    func onBack(){
+        if(pageControll.currentPage > 0){
+            print ("click back button");
+            var frame: CGRect = self.scrollView.bounds
+            frame.origin.x = frame.size.width * CGFloat(pageControll.currentPage-1)
+            pageControll.currentPage -= 1
+            frame.origin.y = 0
+            self.scrollView.scrollRectToVisible(frame, animated: true)
+        }
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
