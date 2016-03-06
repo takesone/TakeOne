@@ -17,20 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e51-zd-Glx">
-                                <rect key="frame" x="20" y="10" width="560" height="580"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e51-zd-Glx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0I-BM-wqE">
+                                <rect key="frame" x="200" y="120" width="200" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Kq9-to-kN5" userLabel="width = 200"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e51-zd-Glx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0zF-ea-hzW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e51-zd-Glx" secondAttribute="bottom" id="LzM-fz-a72"/>
+                            <constraint firstItem="k0I-BM-wqE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uqh-N9-ei1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k0I-BM-wqE" secondAttribute="bottom" constant="430" id="Zqu-I3-qRX"/>
+                            <constraint firstItem="k0I-BM-wqE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bve-Ig-MLh"/>
+                            <constraint firstItem="k0I-BM-wqE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="eQg-xh-sIo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k0I-BM-wqE" secondAttribute="bottom" constant="430" id="sSm-u6-iHs"/>
                             <constraint firstAttribute="trailing" secondItem="e51-zd-Glx" secondAttribute="trailing" id="tPT-4f-d4K"/>
                             <constraint firstItem="e51-zd-Glx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vEH-1j-2aO"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bve-Ig-MLh"/>
+                                <exclude reference="Zqu-I3-qRX"/>
+                                <exclude reference="sSm-u6-iHs"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="loginImageView" destination="e51-zd-Glx" id="1Tm-hA-fnE"/>
+                        <outlet property="loginTitleImageView" destination="k0I-BM-wqE" id="FF4-QW-HTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
