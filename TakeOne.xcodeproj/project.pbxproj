@@ -14,6 +14,11 @@
 		DB4873C21C8B61C400D09665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4873C01C8B61C400D09665 /* LaunchScreen.storyboard */; };
 		DB4873CD1C8B61C400D09665 /* TakeOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873CC1C8B61C400D09665 /* TakeOneTests.swift */; };
 		DB4873D81C8B61C400D09665 /* TakeOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873D71C8B61C400D09665 /* TakeOneUITests.swift */; };
+		DB5C46E91C8C17180095B5C4 /* cH1.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E41C8C17180095B5C4 /* cH1.png */; };
+		DB5C46EA1C8C17180095B5C4 /* cH2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E51C8C17180095B5C4 /* cH2.png */; };
+		DB5C46EB1C8C17180095B5C4 /* cH3.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E61C8C17180095B5C4 /* cH3.png */; };
+		DB5C46EC1C8C17180095B5C4 /* logBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E71C8C17180095B5C4 /* logBg.png */; };
+		DB5C46ED1C8C17180095B5C4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E81C8C17180095B5C4 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		DB4873D31C8B61C400D09665 /* TakeOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4873D71C8B61C400D09665 /* TakeOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOneUITests.swift; sourceTree = "<group>"; };
 		DB4873D91C8B61C400D09665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5C46E41C8C17180095B5C4 /* cH1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cH1.png; path = TakeOne/Images/cH1.png; sourceTree = "<group>"; };
+		DB5C46E51C8C17180095B5C4 /* cH2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cH2.png; path = TakeOne/Images/cH2.png; sourceTree = "<group>"; };
+		DB5C46E61C8C17180095B5C4 /* cH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cH3.png; path = TakeOne/Images/cH3.png; sourceTree = "<group>"; };
+		DB5C46E71C8C17180095B5C4 /* logBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logBg.png; path = TakeOne/Images/logBg.png; sourceTree = "<group>"; };
+		DB5C46E81C8C17180095B5C4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = TakeOne/Images/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,7 @@
 		DB4873AB1C8B61C400D09665 = {
 			isa = PBXGroup;
 			children = (
+				DB5C46E31C8C16BE0095B5C4 /* Images */,
 				DB4873B61C8B61C400D09665 /* TakeOne */,
 				DB4873CB1C8B61C400D09665 /* TakeOneTests */,
 				DB4873D61C8B61C400D09665 /* TakeOneUITests */,
@@ -123,6 +134,18 @@
 				DB4873D91C8B61C400D09665 /* Info.plist */,
 			);
 			path = TakeOneUITests;
+			sourceTree = "<group>";
+		};
+		DB5C46E31C8C16BE0095B5C4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C46E41C8C17180095B5C4 /* cH1.png */,
+				DB5C46E51C8C17180095B5C4 /* cH2.png */,
+				DB5C46E61C8C17180095B5C4 /* cH3.png */,
+				DB5C46E71C8C17180095B5C4 /* logBg.png */,
+				DB5C46E81C8C17180095B5C4 /* logo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +216,7 @@
 				TargetAttributes = {
 					DB4873B31C8B61C400D09665 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DQUR3JM8V4;
 					};
 					DB4873C71C8B61C400D09665 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,8 +253,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5C46EB1C8C17180095B5C4 /* cH3.png in Resources */,
 				DB4873C21C8B61C400D09665 /* LaunchScreen.storyboard in Resources */,
+				DB5C46EC1C8C17180095B5C4 /* logBg.png in Resources */,
+				DB5C46EA1C8C17180095B5C4 /* cH2.png in Resources */,
+				DB5C46ED1C8C17180095B5C4 /* logo.png in Resources */,
 				DB4873BF1C8B61C400D09665 /* Assets.xcassets in Resources */,
+				DB5C46E91C8C17180095B5C4 /* cH1.png in Resources */,
 				DB4873BD1C8B61C400D09665 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TakeOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuichi.TakeOne;
@@ -408,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TakeOne/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuichi.TakeOne;
@@ -482,6 +513,7 @@
 				DB4873DE1C8B61C400D09665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB4873DF1C8B61C400D09665 /* Build configuration list for PBXNativeTarget "TakeOneTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +522,7 @@
 				DB4873E11C8B61C400D09665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB4873E21C8B61C400D09665 /* Build configuration list for PBXNativeTarget "TakeOneUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +531,7 @@
 				DB4873E41C8B61C400D09665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
