@@ -37,6 +37,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onClickFacebookLogin(sender: UIButton) {
+        let tutorial = TutorialViewController()
+        if (tutorial.isTutorialDone()){
+            self.presentViewController(tutorial, animated: true, completion: nil)
+        }
+    }
 
 }
 
