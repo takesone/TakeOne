@@ -214,6 +214,9 @@
                             <constraint firstItem="AfJ-ZA-uMe" firstAttribute="top" secondItem="tGM-iL-QBs" secondAttribute="bottom" constant="50" id="zsZ-gf-7FA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="wgh-6w-1qM" id="PP6-aY-17s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dj2-Xk-PyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
