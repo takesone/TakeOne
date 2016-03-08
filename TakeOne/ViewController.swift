@@ -39,8 +39,15 @@ class ViewController: UIViewController {
 
     @IBAction func onClickFacebookLogin(sender: UIButton) {
         let tutorial = TutorialViewController()
-        if (tutorial.isTutorialDone()){
+        if (!tutorial.isTutorialDone()){
             self.presentViewController(tutorial, animated: true, completion: nil)
+        }else{
+            //let profileView: ProfileRegisterScene = self.storyboard?.instantiateViewControllerWithIdentifier("id_profileRegisterVC") as! ProfileRegisterScene
+            //画面移動(今はとりあえずプロファイルのページに移動)
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let profileView: ProfileRegisterScene = sb.instantiateViewControllerWithIdentifier("id_profileRegisterVC") as! ProfileRegisterScene
+            self.presentViewController(profileView, animated: true, completion:nil)
+
         }
     }
 
