@@ -22,6 +22,7 @@
 		DBD912B71C8DAF9500A9CD80 /* ProfileRegisterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD912B61C8DAF9500A9CD80 /* ProfileRegisterScene.swift */; };
 		DBDCC4671C8CA11500C0DB74 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDCC4661C8CA11500C0DB74 /* TutorialViewController.swift */; };
 		DBDCC4691C8CB13600C0DB74 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */; };
+		DBEE182E1C9082950065D111 /* ProductRegisterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEE182D1C9082950065D111 /* ProductRegisterScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DBD912B61C8DAF9500A9CD80 /* ProfileRegisterScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRegisterScene.swift; sourceTree = "<group>"; };
 		DBDCC4661C8CA11500C0DB74 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		DBEE182D1C9082950065D111 /* ProductRegisterScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRegisterScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				DB4873B71C8B61C400D09665 /* AppDelegate.swift */,
 				DB4873B91C8B61C400D09665 /* ViewController.swift */,
 				DB4873BB1C8B61C400D09665 /* Main.storyboard */,
+				DBEE182D1C9082950065D111 /* ProductRegisterScene.swift */,
 				DBDCC4661C8CA11500C0DB74 /* TutorialViewController.swift */,
 				DB4873BE1C8B61C400D09665 /* Assets.xcassets */,
 				DB4873C01C8B61C400D09665 /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 				DBDCC4691C8CB13600C0DB74 /* ProductsList.swift in Sources */,
 				DBDCC4671C8CA11500C0DB74 /* TutorialViewController.swift in Sources */,
 				DB4873B81C8B61C400D09665 /* AppDelegate.swift in Sources */,
+				DBEE182E1C9082950065D111 /* ProductRegisterScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
