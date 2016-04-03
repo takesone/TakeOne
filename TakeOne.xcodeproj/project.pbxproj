@@ -119,7 +119,7 @@
 				DBDFACA81CB188BE00496833 /* LoginView */,
 				DB4873B71C8B61C400D09665 /* AppDelegate.swift */,
 				DBEE182D1C9082950065D111 /* ProductRegisterScene.swift */,
-				DBDFACAB1CB1892300496833 /* ProfileRegister */,
+				DBDFACAB1CB1892300496833 /* ProfileRegisterView */,
 				DB4873BE1C8B61C400D09665 /* Assets.xcassets */,
 				DB4873C31C8B61C400D09665 /* Info.plist */,
 				DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */,
@@ -167,13 +167,13 @@
 			name = LoginView;
 			sourceTree = "<group>";
 		};
-		DBDFACAB1CB1892300496833 /* ProfileRegister */ = {
+		DBDFACAB1CB1892300496833 /* ProfileRegisterView */ = {
 			isa = PBXGroup;
 			children = (
 				DBD912B61C8DAF9500A9CD80 /* ProfileRegisterScene.swift */,
 				DBDFACA91CB1891D00496833 /* ProfileRegister.storyboard */,
 			);
-			name = ProfileRegister;
+			name = ProfileRegisterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
