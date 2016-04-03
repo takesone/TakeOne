@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         }else{
             //let profileView: ProfileRegisterScene = self.storyboard?.instantiateViewControllerWithIdentifier("id_profileRegisterVC") as! ProfileRegisterScene
             //画面移動(今はとりあえずプロファイルのページに移動)
-            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let sb = UIStoryboard(name: "ProfileRegister", bundle: nil)
             let profileView: ProfileRegisterScene = sb.instantiateViewControllerWithIdentifier("id_profileRegisterVC") as! ProfileRegisterScene
             self.presentViewController(profileView, animated: true, completion:nil)
 
