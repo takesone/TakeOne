@@ -18,6 +18,7 @@
 		DB5C46EB1C8C17180095B5C4 /* cH3.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E61C8C17180095B5C4 /* cH3.png */; };
 		DB5C46EC1C8C17180095B5C4 /* logBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E71C8C17180095B5C4 /* logBg.png */; };
 		DB5C46ED1C8C17180095B5C4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5C46E81C8C17180095B5C4 /* logo.png */; };
+		DBD22B731CB2750D00CD2F18 /* ProductList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD22B721CB2750D00CD2F18 /* ProductList.storyboard */; };
 		DBD912B71C8DAF9500A9CD80 /* ProfileRegisterScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD912B61C8DAF9500A9CD80 /* ProfileRegisterScene.swift */; };
 		DBDCC4671C8CA11500C0DB74 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDCC4661C8CA11500C0DB74 /* TutorialViewController.swift */; };
 		DBDCC4691C8CB13600C0DB74 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */; };
@@ -60,6 +61,7 @@
 		DB5C46E61C8C17180095B5C4 /* cH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cH3.png; path = TakeOne/Images/cH3.png; sourceTree = "<group>"; };
 		DB5C46E71C8C17180095B5C4 /* logBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logBg.png; path = TakeOne/Images/logBg.png; sourceTree = "<group>"; };
 		DB5C46E81C8C17180095B5C4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = TakeOne/Images/logo.png; sourceTree = "<group>"; };
+		DBD22B721CB2750D00CD2F18 /* ProductList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductList.storyboard; sourceTree = "<group>"; };
 		DBD912B61C8DAF9500A9CD80 /* ProfileRegisterScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRegisterScene.swift; sourceTree = "<group>"; };
 		DBDCC4661C8CA11500C0DB74 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				DB4873BE1C8B61C400D09665 /* Assets.xcassets */,
 				DB4873C31C8B61C400D09665 /* Info.plist */,
 				DBDCC4681C8CB13600C0DB74 /* ProductsList.swift */,
+				DBD22B721CB2750D00CD2F18 /* ProductList.storyboard */,
 			);
 			path = TakeOne;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD22B731CB2750D00CD2F18 /* ProductList.storyboard in Resources */,
 				DB5C46EB1C8C17180095B5C4 /* cH3.png in Resources */,
 				DB5C46EC1C8C17180095B5C4 /* logBg.png in Resources */,
 				DB5C46EA1C8C17180095B5C4 /* cH2.png in Resources */,
