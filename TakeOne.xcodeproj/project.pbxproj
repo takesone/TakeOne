@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B09E4091CF2F28700971E2B /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E4081CF2F28700971E2B /* Form.storyboard */; };
+		6B09E41B1CF302D400971E2B /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09E41A1CF302D400971E2B /* FormViewController.swift */; };
+		6B09E41E1CF4480900971E2B /* ImageChose.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E41C1CF4480900971E2B /* ImageChose.png */; };
+		6B09E41F1CF4480900971E2B /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E41D1CF4480900971E2B /* right.png */; };
+		6B09E4211CF4545400971E2B /* Form.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E4201CF4545400971E2B /* Form.storyboard */; };
+		6B09E4241CF4575200971E2B /* FormImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09E4221CF4575200971E2B /* FormImageTableViewCell.swift */; };
+		6B09E4251CF4575200971E2B /* FormImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E4231CF4575200971E2B /* FormImageTableViewCell.xib */; };
+		6B09E4271CF45F4C00971E2B /* FormTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09E4261CF45F4C00971E2B /* FormTableView.swift */; };
+		6B09E4291CF7DA7C00971E2B /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09E4281CF7DA7C00971E2B /* BaseTabBarController.swift */; };
+		6B09E42B1CF7DAB700971E2B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B09E42A1CF7DAB700971E2B /* Home.storyboard */; };
 		DB4873B81C8B61C400D09665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873B71C8B61C400D09665 /* AppDelegate.swift */; };
 		DB4873BA1C8B61C400D09665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873B91C8B61C400D09665 /* ViewController.swift */; };
 		DB4873BD1C8B61C400D09665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4873BB1C8B61C400D09665 /* Main.storyboard */; };
@@ -45,7 +53,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6B09E4081CF2F28700971E2B /* Form.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
+		6B09E41A1CF302D400971E2B /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		6B09E41C1CF4480900971E2B /* ImageChose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ImageChose.png; path = "../../../../var/folders/_q/1hh6xc154fvcwl50_4cz_dzw0000gp/T/com.macrabbit.LayerCake/A5389ADC-14FC-4879-AB58-4286408A383B/ImageChose.png"; sourceTree = "<group>"; };
+		6B09E41D1CF4480900971E2B /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = "../../../../var/folders/_q/1hh6xc154fvcwl50_4cz_dzw0000gp/T/com.macrabbit.LayerCake/A5389ADC-14FC-4879-AB58-4286408A383B/right.png"; sourceTree = "<group>"; };
+		6B09E4201CF4545400971E2B /* Form.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Form.storyboard; sourceTree = "<group>"; };
+		6B09E4221CF4575200971E2B /* FormImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormImageTableViewCell.swift; sourceTree = "<group>"; };
+		6B09E4231CF4575200971E2B /* FormImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormImageTableViewCell.xib; sourceTree = "<group>"; };
+		6B09E4261CF45F4C00971E2B /* FormTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableView.swift; sourceTree = "<group>"; };
+		6B09E4281CF7DA7C00971E2B /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		6B09E42A1CF7DAB700971E2B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DB4873B41C8B61C400D09665 /* TakeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4873B71C8B61C400D09665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4873B91C8B61C400D09665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +115,11 @@
 		6B09E40A1CF2F28D00971E2B /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				6B09E4081CF2F28700971E2B /* Form.storyboard */,
+				6B09E41A1CF302D400971E2B /* FormViewController.swift */,
+				6B09E4261CF45F4C00971E2B /* FormTableView.swift */,
+				6B09E4201CF4545400971E2B /* Form.storyboard */,
+				6B09E4221CF4575200971E2B /* FormImageTableViewCell.swift */,
+				6B09E4231CF4575200971E2B /* FormImageTableViewCell.xib */,
 			);
 			name = Form;
 			sourceTree = "<group>";
@@ -128,6 +148,8 @@
 		DB4873B61C8B61C400D09665 /* TakeOne */ = {
 			isa = PBXGroup;
 			children = (
+				6B09E4281CF7DA7C00971E2B /* BaseTabBarController.swift */,
+				6B09E42A1CF7DAB700971E2B /* Home.storyboard */,
 				DBDFACA81CB188BE00496833 /* LoginView */,
 				DB4873B71C8B61C400D09665 /* AppDelegate.swift */,
 				DBEE182D1C9082950065D111 /* ProductRegisterScene.swift */,
@@ -162,6 +184,8 @@
 		DB5C46E31C8C16BE0095B5C4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6B09E41C1CF4480900971E2B /* ImageChose.png */,
+				6B09E41D1CF4480900971E2B /* right.png */,
 				DB5C46E41C8C17180095B5C4 /* cH1.png */,
 				DB5C46E51C8C17180095B5C4 /* cH2.png */,
 				DB5C46E61C8C17180095B5C4 /* cH3.png */,
@@ -301,9 +325,13 @@
 				DB5C46EA1C8C17180095B5C4 /* cH2.png in Resources */,
 				DB5C46ED1C8C17180095B5C4 /* logo.png in Resources */,
 				DB4873BF1C8B61C400D09665 /* Assets.xcassets in Resources */,
-				6B09E4091CF2F28700971E2B /* Form.storyboard in Resources */,
+				6B09E41F1CF4480900971E2B /* right.png in Resources */,
+				6B09E42B1CF7DAB700971E2B /* Home.storyboard in Resources */,
+				6B09E41E1CF4480900971E2B /* ImageChose.png in Resources */,
 				DB5C46E91C8C17180095B5C4 /* cH1.png in Resources */,
 				DB4873BD1C8B61C400D09665 /* Main.storyboard in Resources */,
+				6B09E4251CF4575200971E2B /* FormImageTableViewCell.xib in Resources */,
+				6B09E4211CF4545400971E2B /* Form.storyboard in Resources */,
 				DBDFACAA1CB1891D00496833 /* ProfileRegister.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD912B71C8DAF9500A9CD80 /* ProfileRegisterScene.swift in Sources */,
+				6B09E4241CF4575200971E2B /* FormImageTableViewCell.swift in Sources */,
+				6B09E4291CF7DA7C00971E2B /* BaseTabBarController.swift in Sources */,
+				6B09E4271CF45F4C00971E2B /* FormTableView.swift in Sources */,
+				6B09E41B1CF302D400971E2B /* FormViewController.swift in Sources */,
 				DB4873BA1C8B61C400D09665 /* ViewController.swift in Sources */,
 				DBDCC4691C8CB13600C0DB74 /* ProductsList.swift in Sources */,
 				DBDCC4671C8CA11500C0DB74 /* TutorialViewController.swift in Sources */,
