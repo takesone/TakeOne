@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="imY-04-fhP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Message View Controller-->
+        <scene sceneID="iMv-mI-9rt">
+            <objects>
+                <viewController id="cEs-0F-Ty6" customClass="MessageViewController" customModule="TakeOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mqA-cz-bYf"/>
+                        <viewControllerLayoutGuide type="bottom" id="b2Q-1V-LA4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0sa-Ym-Qmm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sct-q7-RJY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfY-9s-cbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="419"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5az-xW-yiU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="imY-04-fhP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="roe-up-dwW"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gvw-M5-hP7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cEs-0F-Ty6" kind="relationship" relationship="rootViewController" id="rQ2-Ff-iON"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdf-Ep-tsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="419"/>
+        </scene>
+    </scenes>
+</document>

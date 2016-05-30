@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--ProfileRegisterController-->
+        <scene sceneID="PeH-KV-6jT">
+            <objects>
+                <viewController storyboardIdentifier="id_profileRegisterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iAb-ko-efS" userLabel="ProfileRegisterController" customClass="ProfileRegisterScene" customModule="TakeOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MQh-vK-HBx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q0K-8R-VaD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ylu-T2-Mu1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="性" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKk-mL-41O">
+                                <rect key="frame" x="20" y="50" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Tjn-kd-xzn" userLabel="height = 40"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ECy-n0-wKc">
+                                <rect key="frame" x="20" y="102" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YKt-fl-p7h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="性別" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Quc-HY-bjs">
+                                <rect key="frame" x="20" y="154" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I5D-UU-H1c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="生年月日" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-AQ-nNw">
+                                <rect key="frame" x="20" y="206" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UBE-iG-fL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-dw-Vj8">
+                                <rect key="frame" x="0.0" y="520" width="600" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.47704209380000001" blue="0.28409019790000001" alpha="0.80526928190000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aax-Gl-14t"/>
+                                </constraints>
+                                <state key="normal" title="登録する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRegister:" destination="iAb-ko-efS" eventType="touchUpInside" id="4qh-U1-ZG4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="住所" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-97-rgb">
+                                <rect key="frame" x="20" y="258" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9li-vc-PG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xS1-Du-ufR">
+                                <rect key="frame" x="340" y="70" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQg-18-IGo">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uh-f2-BPs">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <state key="normal" title="とりあえず写真アップロードボタン"/>
+                                        <connections>
+                                            <action selector="onUploadPicture:" destination="iAb-ko-efS" eventType="touchUpInside" id="7AE-nv-D42"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4Uh-f2-BPs" firstAttribute="width" secondItem="xS1-Du-ufR" secondAttribute="width" id="47H-zf-BQs"/>
+                                    <constraint firstItem="4Uh-f2-BPs" firstAttribute="centerY" secondItem="xS1-Du-ufR" secondAttribute="centerY" id="4lo-YE-hHK"/>
+                                    <constraint firstItem="4Uh-f2-BPs" firstAttribute="centerX" secondItem="xS1-Du-ufR" secondAttribute="centerX" id="OIu-4q-P5y"/>
+                                    <constraint firstItem="CQg-18-IGo" firstAttribute="width" secondItem="xS1-Du-ufR" secondAttribute="width" id="S5F-kR-Qnn"/>
+                                    <constraint firstItem="CQg-18-IGo" firstAttribute="height" secondItem="xS1-Du-ufR" secondAttribute="height" id="XDa-lA-G6b"/>
+                                    <constraint firstItem="CQg-18-IGo" firstAttribute="centerX" secondItem="xS1-Du-ufR" secondAttribute="centerX" id="fSH-zi-SIj"/>
+                                    <constraint firstItem="4Uh-f2-BPs" firstAttribute="height" secondItem="xS1-Du-ufR" secondAttribute="height" id="lSz-ur-Phi"/>
+                                    <constraint firstItem="CQg-18-IGo" firstAttribute="centerY" secondItem="xS1-Du-ufR" secondAttribute="centerY" id="sAc-fP-tKh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ECy-n0-wKc" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.5" id="5qa-nZ-elb"/>
+                            <constraint firstItem="Quc-HY-bjs" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.5" id="72K-MN-JRk"/>
+                            <constraint firstItem="xS1-Du-ufR" firstAttribute="top" secondItem="MQh-vK-HBx" secondAttribute="bottom" constant="50" id="Dj3-Bh-ZqM"/>
+                            <constraint firstItem="ECy-n0-wKc" firstAttribute="leading" secondItem="ylu-T2-Mu1" secondAttribute="leadingMargin" id="FSa-mv-t6i"/>
+                            <constraint firstItem="cdM-dw-Vj8" firstAttribute="centerX" secondItem="ylu-T2-Mu1" secondAttribute="centerX" id="K2o-KN-idJ"/>
+                            <constraint firstItem="cdM-dw-Vj8" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" id="K9j-uZ-HDQ"/>
+                            <constraint firstItem="VKk-mL-41O" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.5" id="MBy-bR-jsM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xS1-Du-ufR" secondAttribute="trailing" id="OYa-fs-Pee"/>
+                            <constraint firstItem="Quc-HY-bjs" firstAttribute="leading" secondItem="ylu-T2-Mu1" secondAttribute="leadingMargin" id="QYw-Tr-2Q8"/>
+                            <constraint firstItem="JL1-97-rgb" firstAttribute="leading" secondItem="ylu-T2-Mu1" secondAttribute="leadingMargin" id="V3X-26-Dmy"/>
+                            <constraint firstItem="JL1-97-rgb" firstAttribute="top" secondItem="B5g-AQ-nNw" secondAttribute="bottom" constant="2" id="WeT-sW-ehc"/>
+                            <constraint firstItem="B5g-AQ-nNw" firstAttribute="top" secondItem="Quc-HY-bjs" secondAttribute="bottom" constant="2" id="mH6-FN-G83"/>
+                            <constraint firstItem="B5g-AQ-nNw" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.5" id="mVf-CY-7NY"/>
+                            <constraint firstItem="VKk-mL-41O" firstAttribute="leading" secondItem="ylu-T2-Mu1" secondAttribute="leadingMargin" id="nu9-k1-Lli"/>
+                            <constraint firstItem="B5g-AQ-nNw" firstAttribute="leading" secondItem="ylu-T2-Mu1" secondAttribute="leadingMargin" id="ofa-Xg-19c"/>
+                            <constraint firstItem="JL1-97-rgb" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.5" id="pZ4-Oo-IJF"/>
+                            <constraint firstItem="xS1-Du-ufR" firstAttribute="width" secondItem="ylu-T2-Mu1" secondAttribute="width" multiplier="0.4" id="qgj-i6-Syg"/>
+                            <constraint firstItem="ECy-n0-wKc" firstAttribute="top" secondItem="VKk-mL-41O" secondAttribute="bottom" constant="2" id="sHd-SC-lAU"/>
+                            <constraint firstItem="VKk-mL-41O" firstAttribute="top" secondItem="MQh-vK-HBx" secondAttribute="bottom" constant="30" id="u8U-a6-d9k"/>
+                            <constraint firstItem="Quc-HY-bjs" firstAttribute="top" secondItem="ECy-n0-wKc" secondAttribute="bottom" constant="2" id="vJS-c6-jDp"/>
+                            <constraint firstItem="xS1-Du-ufR" firstAttribute="height" secondItem="ylu-T2-Mu1" secondAttribute="height" multiplier="0.4" id="y7I-5U-sLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="CQg-18-IGo" id="kMq-Yr-Uie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzU-r5-tgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="391"/>
+        </scene>
+    </scenes>
+</document>
