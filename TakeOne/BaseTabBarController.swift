@@ -15,14 +15,25 @@ class BaseTabBarController: UITabBarController {
         
         // 呼びたいストーリーボードを定義
          // TODO: 新しいビューができたら名前変更
-        let formSB = UIStoryboard(name: "Form", bundle: nil)
+        let mypageSB = UIStoryboard(name: "Mypage", bundle: nil)
+        let messageSB = UIStoryboard(name: "Message", bundle: nil)
+        let registrationSB = UIStoryboard(name: "Registration", bundle: nil)
+        let searchSB = UIStoryboard(name: "Search", bundle: nil)
+        let topSB = UIStoryboard(name: "Top", bundle: nil)
         
         // はじめに呼び出されるべきところを定義する
-        let formVC = formSB.instantiateInitialViewController()!
-        
-        // 読み込むビューを定義する
+        let mypageVC = mypageSB.instantiateInitialViewController()!
+        let messageVC = messageSB.instantiateInitialViewController()!
+        let registrationVC = registrationSB.instantiateInitialViewController()!
+        let searchVC = searchSB.instantiateInitialViewController()!
+        let topVC = topSB.instantiateInitialViewController()!
+        // 読み込むビューを定義する(配下)
         viewControllers = [
-        formVC,
+        mypageVC,
+        messageVC,
+        registrationVC,
+        searchVC,
+        topVC,
         ]
         
         setupTabBar()
@@ -40,8 +51,16 @@ class BaseTabBarController: UITabBarController {
     
     
     private func setupTabBar() {
-        let formItem: UITabBarItem = tabBar.items![0]
-        formItem.title = "Form"
+        let mypageItem: UITabBarItem = tabBar.items![0]
+        mypageItem.title = "Mypage"
+        let messageItem: UITabBarItem = tabBar.items![1]
+        messageItem.title = "Message"
+        let registrationItem: UITabBarItem = tabBar.items![2]
+        registrationItem.title = "Registration"
+        let searchItem: UITabBarItem = tabBar.items![3]
+        searchItem.title = "Search"
+        let topItem: UITabBarItem = tabBar.items![4]
+        topItem.title = "Top"
     }
     
 

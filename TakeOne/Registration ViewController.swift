@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Registration_ViewController: UITabBarController {
+class Registration_ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
