@@ -28,6 +28,7 @@
 		A22AEF771D011AD80034616C /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22AEF721D011AD80034616C /* Registration.storyboard */; };
 		A22AEF781D011AD80034616C /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22AEF741D011AD80034616C /* Search.storyboard */; };
 		A22AEF791D011AD80034616C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22AEF751D011AD80034616C /* SearchViewController.swift */; };
+		A22AEF7E1D014E1C0034616C /* FeedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22AEF7D1D014E1C0034616C /* FeedTableView.swift */; };
 		DB4873B81C8B61C400D09665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873B71C8B61C400D09665 /* AppDelegate.swift */; };
 		DB4873BA1C8B61C400D09665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4873B91C8B61C400D09665 /* ViewController.swift */; };
 		DB4873BD1C8B61C400D09665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4873BB1C8B61C400D09665 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		A22AEF721D011AD80034616C /* Registration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		A22AEF741D011AD80034616C /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		A22AEF751D011AD80034616C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A22AEF7D1D014E1C0034616C /* FeedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableView.swift; sourceTree = "<group>"; };
 		D5107AFAF760F7796284467A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DB4873B41C8B61C400D09665 /* TakeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4873B71C8B61C400D09665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		A22AEF611D011AB70034616C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				A22AEF7A1D014DBD0034616C /* Views */,
 				A22AEF631D011AB70034616C /* FeedViewController.swift */,
 				A22AEF621D011AB70034616C /* Feed.storyboard */,
 			);
@@ -202,6 +205,14 @@
 				A22AEF741D011AD80034616C /* Search.storyboard */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		A22AEF7A1D014DBD0034616C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A22AEF7D1D014E1C0034616C /* FeedTableView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DB4873AB1C8B61C400D09665 = {
@@ -516,6 +527,7 @@
 				6B09E4241CF4575200971E2B /* FormImageTableViewCell.swift in Sources */,
 				A22AEF651D011AB70034616C /* FeedViewController.swift in Sources */,
 				A22AEF6F1D011AC90034616C /* MypageViewController.swift in Sources */,
+				A22AEF7E1D014E1C0034616C /* FeedTableView.swift in Sources */,
 				6B09E4291CF7DA7C00971E2B /* BaseTabBarController.swift in Sources */,
 				6B09E4271CF45F4C00971E2B /* FormTableView.swift in Sources */,
 				6B09E41B1CF302D400971E2B /* FormViewController.swift in Sources */,
