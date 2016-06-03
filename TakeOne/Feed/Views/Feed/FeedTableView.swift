@@ -26,10 +26,7 @@ class FeedTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
         registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        if let showChatViewController = showChatViewController {
-            showChatViewController()
-        }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     }
     
     // MARK: - UITableViewDataSource Methods -

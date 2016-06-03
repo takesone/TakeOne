@@ -39,7 +39,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="T6j-a0-hFf"/>
                     <connections>
-                        <outlet property="feedTableView" destination="Ruo-eS-EBs" id="hw5-jE-j1Q"/>
+                        <outlet property="feedTableView" destination="Ruo-eS-EBs" id="Ogz-s9-Bfp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrB-YS-XuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
