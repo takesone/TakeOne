@@ -19,21 +19,21 @@ class BaseTabBarController: UITabBarController {
         let messageSB = UIStoryboard(name: "Message", bundle: nil)
         let registrationSB = UIStoryboard(name: "Registration", bundle: nil)
         let searchSB = UIStoryboard(name: "Search", bundle: nil)
-        let topSB = UIStoryboard(name: "Top", bundle: nil)
+        let feedSB = UIStoryboard(name: "Feed", bundle: nil)
         
         // はじめに呼び出されるべきところを定義する
         let mypageVC = mypageSB.instantiateInitialViewController()!
         let messageVC = messageSB.instantiateInitialViewController()!
         let registrationVC = registrationSB.instantiateInitialViewController()!
         let searchVC = searchSB.instantiateInitialViewController()!
-        let topVC = topSB.instantiateInitialViewController()!
+        let feedVC = feedSB.instantiateInitialViewController()!
         // 読み込むビューを定義する(配下)
         viewControllers = [
         mypageVC,
         messageVC,
         registrationVC,
         searchVC,
-        topVC,
+        feedVC,
         ]
         
         setupTabBar()
@@ -60,7 +60,7 @@ class BaseTabBarController: UITabBarController {
         let searchItem: UITabBarItem = tabBar.items![3]
         searchItem.title = "Search"
         let topItem: UITabBarItem = tabBar.items![4]
-        topItem.title = "Top"
+        topItem.title = "Feed"
     }
     
 
