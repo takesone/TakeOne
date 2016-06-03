@@ -54,16 +54,16 @@ class BaseTabBarController: UITabBarController {
     }
     
     private func setupTabBar() {
-        let mypageItem: UITabBarItem = tabBar.items![0]
-        mypageItem.title = "Mypage"
-        let messageItem: UITabBarItem = tabBar.items![1]
-        messageItem.title = "Message"
+        let topItem: UITabBarItem = tabBar.items![0]
+        topItem.title = "フィード"
+        let searchItem: UITabBarItem = tabBar.items![1]
+        searchItem.title = "探す"
         let registrationItem: UITabBarItem = tabBar.items![2]
-        registrationItem.title = "Registration"
-        let searchItem: UITabBarItem = tabBar.items![3]
-        searchItem.title = "Search"
-        let topItem: UITabBarItem = tabBar.items![4]
-        topItem.title = "Feed"
+        registrationItem.title = "出品"
+        let messageItem: UITabBarItem = tabBar.items![3]
+        messageItem.title = "メッセージ"
+        let mypageItem: UITabBarItem = tabBar.items![4]
+        mypageItem.title = "マイページ"
     }
 
 }
