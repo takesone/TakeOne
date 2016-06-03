@@ -9,46 +9,49 @@
 import UIKit
 
 class BaseTabBarController: UITabBarController {
+    
+    // MARK: - View Cycle Methods -
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpViewControllers()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    // MARK: - Private Methods -
+    
+    private func setUpViewControllers() {
         // 呼びたいストーリーボードを定義
-         // TODO: 新しいビューができたら名前変更
-        let mypageSB = UIStoryboard(name: "Mypage", bundle: nil)
-        let messageSB = UIStoryboard(name: "Message", bundle: nil)
-        let registrationSB = UIStoryboard(name: "Registration", bundle: nil)
-        let searchSB = UIStoryboard(name: "Search", bundle: nil)
         let feedSB = UIStoryboard(name: "Feed", bundle: nil)
+        let searchSB = UIStoryboard(name: "Search", bundle: nil)
+        let registrationSB = UIStoryboard(name: "Registration", bundle: nil)
+        let messageSB = UIStoryboard(name: "Message", bundle: nil)
+        let mypageSB = UIStoryboard(name: "Mypage", bundle: nil)
         
         // はじめに呼び出されるべきところを定義する
-        let mypageVC = mypageSB.instantiateInitialViewController()!
-        let messageVC = messageSB.instantiateInitialViewController()!
-        let registrationVC = registrationSB.instantiateInitialViewController()!
-        let searchVC = searchSB.instantiateInitialViewController()!
         let feedVC = feedSB.instantiateInitialViewController()!
+        let searchVC = searchSB.instantiateInitialViewController()!
+        let registrationVC = registrationSB.instantiateInitialViewController()!
+        let messageVC = messageSB.instantiateInitialViewController()!
+        let mypageVC = mypageSB.instantiateInitialViewController()!
         // 読み込むビューを定義する(配下)
         viewControllers = [
-        mypageVC,
-        messageVC,
-        registrationVC,
-        searchVC,
-        feedVC,
+            feedVC,
+            searchVC,
+            registrationVC,
+            messageVC,
+            mypageVC,
         ]
         
         setupTabBar()
         
         //一番はじめに開かれるビューコントローラーの設定
         selectedIndex = 0
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     private func setupTabBar() {
         let mypageItem: UITabBarItem = tabBar.items![0]
@@ -62,8 +65,5 @@ class BaseTabBarController: UITabBarController {
         let topItem: UITabBarItem = tabBar.items![4]
         topItem.title = "Feed"
     }
-    
-
-
 
 }
