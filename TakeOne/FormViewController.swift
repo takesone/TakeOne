@@ -11,8 +11,6 @@ import UIKit
 
 class FormViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
     // Tableで使用する配列を定義する.
     private let myiPhoneItems: NSArray = ["iOS8", "iOS7", "iOS6", "iOS5", "iOS4"]
     private let myAndroidItems: NSArray = ["5.x", "4.x", "2.x", "1.x"]

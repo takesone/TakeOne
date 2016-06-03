@@ -150,8 +150,8 @@
 		6B09E40A1CF2F28D00971E2B /* Form */ = {
 			isa = PBXGroup;
 			children = (
-				6B09E41A1CF302D400971E2B /* FormViewController.swift */,
 				6B09E4261CF45F4C00971E2B /* FormTableView.swift */,
+				6B09E41A1CF302D400971E2B /* FormViewController.swift */,
 				6B09E4201CF4545400971E2B /* Form.storyboard */,
 				6B09E4221CF4575200971E2B /* FormImageTableViewCell.swift */,
 				6B09E4231CF4575200971E2B /* FormImageTableViewCell.xib */,
@@ -162,8 +162,8 @@
 		A22AEF611D011AB70034616C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				A22AEF621D011AB70034616C /* Feed.storyboard */,
 				A22AEF631D011AB70034616C /* FeedViewController.swift */,
+				A22AEF621D011AB70034616C /* Feed.storyboard */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 		A22AEF691D011AC90034616C /* Mypage */ = {
 			isa = PBXGroup;
 			children = (
-				A22AEF6A1D011AC90034616C /* Mypage.storyboard */,
 				A22AEF6B1D011AC90034616C /* MypageViewController.swift */,
+				A22AEF6A1D011AC90034616C /* Mypage.storyboard */,
 			);
 			path = Mypage;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 		A22AEF731D011AD80034616C /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				A22AEF741D011AD80034616C /* Search.storyboard */,
 				A22AEF751D011AD80034616C /* SearchViewController.swift */,
+				A22AEF741D011AD80034616C /* Search.storyboard */,
 			);
 			path = Search;
 			sourceTree = "<group>";
