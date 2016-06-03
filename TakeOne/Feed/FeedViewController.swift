@@ -1,5 +1,5 @@
 //
-//  TopViewController.swift
+//  FeedViewController.swift
 //  TakeOne
 //
 //  Created by YasuhiroWada on 2016/05/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
