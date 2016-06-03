@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed View Controller-->
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ruo-eS-EBs" customClass="FeedTableView" customModule="TakeOne" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -27,8 +28,14 @@
                             <constraint firstAttribute="trailing" secondItem="Ruo-eS-EBs" secondAttribute="trailing" id="Kz4-Ef-kfD"/>
                             <constraint firstItem="dr3-9I-LSF" firstAttribute="top" secondItem="Ruo-eS-EBs" secondAttribute="bottom" id="VIc-R4-Uwr"/>
                             <constraint firstItem="Ruo-eS-EBs" firstAttribute="leading" secondItem="Rex-4a-IW2" secondAttribute="leading" id="XY4-le-ogR"/>
+                            <constraint firstItem="Ruo-eS-EBs" firstAttribute="top" secondItem="Rex-4a-IW2" secondAttribute="topMargin" id="aU3-UI-BCM"/>
                             <constraint firstItem="Ruo-eS-EBs" firstAttribute="top" secondItem="v7d-xP-D0v" secondAttribute="bottom" id="fm2-p8-KvY"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fm2-p8-KvY"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="T6j-a0-hFf"/>
                     <connections>
