@@ -1,21 +1,21 @@
 //
-//  ProductsList.swift
+//  SearchViewController.swift
 //  TakeOne
 //
-//  Created by YuichiSawada on 3/7/16.
-//  Copyright © 2016 YuichiSawada. All rights reserved.
+//  Created by YasuhiroWada on 2016/05/30.
+//  Copyright © 2016年 YuichiSawada. All rights reserved.
 //
 
 import UIKit
 
-class ProductsList: UIViewController {
-    
+class SearchViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
 }
